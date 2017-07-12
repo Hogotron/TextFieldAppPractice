@@ -10,6 +10,13 @@ import UIKit
 
 class ViewController: UIViewController, UITextFieldDelegate {
     
+    
+    
+    // MARK: Text field delegate objects
+    let zipCodeTextFieldDelegate = ZipCodeTextFieldDelegate()
+    let cashTextFieldDelegate = CashTextFieldDelegate()
+    let lockableTextFieldDelegate = LockableTextFieldDelegate()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
