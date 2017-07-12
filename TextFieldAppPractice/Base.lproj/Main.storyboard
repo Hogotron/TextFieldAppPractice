@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,33 +22,51 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q1Q-o9-85H">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q1Q-o9-85H">
                                 <rect key="frame" x="16" y="20" width="343" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G0V-Eh-zOV">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G0V-Eh-zOV">
                                 <rect key="frame" x="16" y="58" width="343" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="8O3-yu-h9a"/>
+                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fer-Je-qWD">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fer-Je-qWD">
                                 <rect key="frame" x="16" y="96" width="286" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="xFB-x8-x09"/>
+                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pBD-vw-Ltl">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pBD-vw-Ltl">
                                 <rect key="frame" x="310" y="95" width="51" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="P0G-dH-Lhb"/>
+                                </constraints>
                             </switch>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="pBD-vw-Ltl" firstAttribute="leading" secondItem="Fer-Je-qWD" secondAttribute="trailing" constant="8" id="3Dx-sN-hYA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="q1Q-o9-85H" secondAttribute="trailing" id="8r3-hY-of8"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Fer-Je-qWD" secondAttribute="leading" id="INo-vR-gzo"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="q1Q-o9-85H" secondAttribute="leading" id="IyS-j3-JTU"/>
+                            <constraint firstItem="q1Q-o9-85H" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="JZN-DB-dLJ"/>
+                            <constraint firstItem="pBD-vw-Ltl" firstAttribute="trailing" secondItem="G0V-Eh-zOV" secondAttribute="trailing" id="Ox6-dB-rff"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pBD-vw-Ltl" secondAttribute="trailing" id="gt2-Pr-lsF"/>
+                            <constraint firstItem="G0V-Eh-zOV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iDu-Pp-jM9"/>
+                            <constraint firstItem="Fer-Je-qWD" firstAttribute="top" secondItem="G0V-Eh-zOV" secondAttribute="bottom" constant="8" id="mS5-au-Ruh"/>
+                            <constraint firstItem="G0V-Eh-zOV" firstAttribute="top" secondItem="q1Q-o9-85H" secondAttribute="bottom" constant="8" id="qWl-H7-Npy"/>
+                            <constraint firstItem="pBD-vw-Ltl" firstAttribute="bottom" secondItem="Fer-Je-qWD" secondAttribute="bottom" id="vLj-Ex-IJB"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="cashTextField" destination="G0V-Eh-zOV" id="tql-yw-fn0"/>
