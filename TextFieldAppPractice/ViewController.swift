@@ -23,7 +23,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    
+        // MARK: Set text field delegates
+        self.zipCodeTextField.delegate = zipCodeTextFieldDelegate
+        self.cashTextField.delegate = cashTextFieldDelegate
+        self.lockableTextField.delegate = lockableTextFieldDelegate
     }
 }
 
