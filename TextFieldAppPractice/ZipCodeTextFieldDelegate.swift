@@ -12,7 +12,6 @@ import UIKit
 class ZipCodeTextFieldDelegate: NSObject, UITextFieldDelegate {
     
     // MARK: Text field delegate method
-    
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         
         // Figure out what the new text will be if we return true
