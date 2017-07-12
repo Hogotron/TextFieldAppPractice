@@ -49,6 +49,12 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="cashTextField" destination="G0V-Eh-zOV" id="tql-yw-fn0"/>
+                        <outlet property="lockableTextField" destination="Fer-Je-qWD" id="ryl-Wh-3zM"/>
+                        <outlet property="lockableTextFieldEditingSwitch" destination="pBD-vw-Ltl" id="roL-pm-cCA"/>
+                        <outlet property="zipCodeTextField" destination="q1Q-o9-85H" id="wCc-p7-cBw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
