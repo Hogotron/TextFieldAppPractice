@@ -19,7 +19,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
     // MARK: Text field delegate objects
     let zipCodeTextFieldDelegate = ZipCodeTextFieldDelegate()
     let cashTextFieldDelegate = CashTextFieldDelegate()
-    let lockableTextFieldDelegate = LockableTextFieldDelegate()
     
     // MARK: Lifecycle
     override func viewDidLoad() {
@@ -28,7 +27,23 @@ class ViewController: UIViewController, UITextFieldDelegate {
         // MARK: Set text field delegates
         self.zipCodeTextField.delegate = zipCodeTextFieldDelegate
         self.cashTextField.delegate = cashTextFieldDelegate
-        self.lockableTextField.delegate = lockableTextFieldDelegate
+        
+        self.lockableTextFieldEditingSwitch.setOn(false, animated: true)
+    }
+    
+    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+        return self.lockableTextFieldEditingSwitch.isOn
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
+    @IBAction func toggleTextEditor(_ sender: AnyObject) {
+        if (sender as! UISwitch).isOn {
+            self.lockableTextFieldEditingSwitch.resignFirstResponder()
+        }
     }
 }
 

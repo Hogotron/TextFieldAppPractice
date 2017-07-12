@@ -14,7 +14,6 @@
 		376864951F1698DE00D5D266 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 376864931F1698DE00D5D266 /* LaunchScreen.storyboard */; };
 		3768649D1F169BC400D5D266 /* ZipCodeTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3768649C1F169BC400D5D266 /* ZipCodeTextFieldDelegate.swift */; };
 		3768649F1F169BE300D5D266 /* CashTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3768649E1F169BE300D5D266 /* CashTextFieldDelegate.swift */; };
-		376864A11F169BFA00D5D266 /* LockableTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376864A01F169BFA00D5D266 /* LockableTextFieldDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +26,6 @@
 		376864961F1698DE00D5D266 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3768649C1F169BC400D5D266 /* ZipCodeTextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZipCodeTextFieldDelegate.swift; sourceTree = "<group>"; };
 		3768649E1F169BE300D5D266 /* CashTextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CashTextFieldDelegate.swift; sourceTree = "<group>"; };
-		376864A01F169BFA00D5D266 /* LockableTextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LockableTextFieldDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +66,6 @@
 				376864961F1698DE00D5D266 /* Info.plist */,
 				3768649C1F169BC400D5D266 /* ZipCodeTextFieldDelegate.swift */,
 				3768649E1F169BE300D5D266 /* CashTextFieldDelegate.swift */,
-				376864A01F169BFA00D5D266 /* LockableTextFieldDelegate.swift */,
 			);
 			path = TextFieldAppPractice;
 			sourceTree = "<group>";
@@ -150,7 +147,6 @@
 				3768649F1F169BE300D5D266 /* CashTextFieldDelegate.swift in Sources */,
 				3768649D1F169BC400D5D266 /* ZipCodeTextFieldDelegate.swift in Sources */,
 				3768648B1F1698DE00D5D266 /* AppDelegate.swift in Sources */,
-				376864A11F169BFA00D5D266 /* LockableTextFieldDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
