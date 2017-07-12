@@ -21,6 +21,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     let cashTextFieldDelegate = CashTextFieldDelegate()
     let lockableTextFieldDelegate = LockableTextFieldDelegate()
     
+    // MARK: Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
     
